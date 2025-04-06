@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Semh ANANI</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f8fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1d3557;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+
+        .download-btn {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background: #e63946;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .download-btn:hover {
+            background: #d62828;
+        }
+
+        nav {
+            background: #457b9d;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #a8dadc;
+        }
+
+        section {
+            padding: 60px 15px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1d3557;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 260px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: #1d3557;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Semh ANANI</h1>
+        <p>Mobilité : Île-de-France | ananisemh@gmail.com | 0753079868</p>
+        <button class="download-btn" onclick="downloadCV()">Télécharger le CV</button>
+
+         <!---------------- Multilingual Toggle --------------------->
+    <div class="flex justify-center py-4">
+        <button class="mx-2 px-4 py-2 bg-blue-900 text-white rounded" onclick="toggleLanguage('fr')">Français</button>
+        <button class="mx-2 px-4 py-2 bg-gray-300 text-blue-900 rounded" onclick="toggleLanguage('en')">English</button>
+    </div>
+         <!-----------------Multilingual Toggle  --------------------->
+    </header>
+    <script>
+        function downloadCV() {
+            const link = document.createElement('a');
+            link.href = 'download/Curriculum_Vitae_ANANI-SEMH.pdf';  // Assure-toi que le fichier est à ce chemin
+            link.download = 'Curriculum_Vitae_ANANI-SEMH.pdf'
+        }
+
+        function downloadCV() {
+            const link = document.createElement('a');
+            link.href = 'download\Curriculum_Vitae_ANANI-SEMH.pdf';  // Assure-toi que le fichier est à ce chemin
+            link.download = 'Curriculum_Vitae_ANANI-SEMH.pdf';  // Nom du fichier téléchargé
+            link.click();  // Clique sur le lien pour démarrer le téléchargement
+        }
+    </script>
+
+
+    <nav>
+        <ul>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#Compétences">Compétences</a></li>
+            <li><a href="#Expériences">Expériences</a></li>
+            <li><a href="#Qualités & Langues">Qualités & Langues</a></li>
+            <li><a href="#interets">Centres d'intérêts</a></li>
+        </ul>
+    </nav>
+
+
+<!----------------------------PROFIL  ------------------------------------------>
+    <section id="profil" class="profil-section">
+        <div class="profil-container">
+            <img src="C:\Users\A.S.K Semus\Pictures\scream\image2.jpg" alt="Photo de Semh ANANI" class="profil-img">
+            <h2>Semh ANANI</h2>
+            <p>Bienvenue,</p>
+            <p class="profil-text">Je suis une personne très rigoureuse, déterminée à collaborer avec vous et acquérir les compétences nécessaires pour réaliser mon projet personnel. Actuellement étudiant en Cybersécurité à l'Université Sorbonne Paris Nord, je cherche à évoluer dans un environnement dynamique où je pourrais mettre à profit mes compétences en administration réseau et sécurité.</p>
+        </div>
+    </section>    
+    
+    <style>
+        .profil-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px 15px;
+            background: linear-gradient(135deg, #457b9d, #1c3558);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+    
+        .profil-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+        }
+    
+        .profil-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 20px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            transform: scale(1.1);
+           
+        }
+        
+        .profil-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    
+        .profil-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+    
+        .profil-section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const profilSection = document.querySelector(".profil-section");
+            window.addEventListener("scroll", function () {
+                const sectionPos = profilSection.getBoundingClientRect().top;
+                const screenPos = window.innerHeight / 1.3;
+                if (sectionPos < screenPos) {
+                    profilSection.classList.add("show");
+                }
+            });
+        });
+    </script>
+
+    <!--------------------------------PROFIL  -------------------------------------->
+
+    <!----------------------------FORMATION  ---------------------------------------->
+    <section id="formation" class="formation-section">
+        <h2>Formation</h2>
+        <div class="formation-container">
+            <div class="formation-card">
+                <div class="formation-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="formation-details">
+                    <strong>2024-2025 :</strong> <span class="highlight">BUT3 Parcours Cyber</span>, Université Sorbonne Paris Nord
+                </div>
+            </div>
+            <div class="formation-card">
+                <div class="formation-icon">
+                    <i class="fas fa-diploma"></i>
+                </div>
+                <div class="formation-details">
+                    <strong>2022-2024 :</strong> <span class="highlight">L1, L2 Administration Système et Sécurité Réseaux</span>, ESIG, Togo
+                </div>
+            </div>
+        </div>
+    
+        <style>
+            .formation-section {
+                background-color: #f0f4f8;
+                padding: 40px 15px;
+                text-align: center;
+            }
+    
+            .formation-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+    
+            .formation-card {
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                display: flex;
+                align-items: center;
+                padding: 20px;
+                width: 70%;
+                max-width: 500px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+    
+            .formation-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+            }
+    
+            .formation-icon {
+                font-size: 2.5rem;
+                color: #457b9d;
+                margin-right: 20px;
+            }
+    
+            .formation-details {
+                font-size: 1.1rem;
+                color: #333;
+            }
+    
+            .formation-details strong {
+                color: #1d3557;
+                font-weight: bold;
+            }
+    
+            .highlight {
+                font-weight: bold;
+                color: #e63946;
+            }
+        </style>
+    </section>
+    
+    
+    
+<!----------------------------FORMATION  ---------------------------------------->
+
+<!------------------------------------PROJETS  -------------------------------------->
+    <section id="projets">
+        <h2>Projets Réalisés</h2>
+        <div class="container">
+            <div class="card">
+                <h3><a href="architecture_reseau.html">Architecture Réseau</a></h3>
+                <p>Conception et implémentation d'une infrastructure réseau sécurisée par le firewwall pfsense.</p>
+            </div>
+            <div class="card">
+                <h3><a href="stormshield.html">Sécurisation avec Stormshield</a></h3>
+                <p>Déploiement de pare-feu et filtrage réseau.</p>
+            </div>
+            <div class="card">
+                <h3><a href="pentesting.html">Pentesting & Sécurité</a></h3>
+                <p>Audit et tests d’intrusion avec Metasploit, Burp Suite.</p>
+            </div>
+            <div class="card">
+                <h3><a href="nagios.html">Supervision Réseau</a></h3>
+                <p>Monitoring des équipements avec Nagios.</p>
+            </div>
+        </div>
+    </section>
+<!-------------------------------------PROJETS  ---------------------------------->
+
+<!--------------------------------------COMPETENCES  ------------------------------>
+    <section id="competences">
+        <h2>Compétences</h2>
+        <div class="container">
+            <div class="card">
+                <h3><a href="langages.html">Langages de Programmation</a></h3>
+                <p>Python, Bash, HTML/CSS</p>
+            </div>
+            <div class="card">
+                <h3><a href="admin_systeme.html">Administration Système</a></h3>
+                <p>Windows Server, Pare-feu, Routeurs et Switches</p>
+            </div>
+            <div class="card">
+                <h3><a href="securite.html">Outils de Sécurité</a></h3>
+                <p>Nmap, Metasploit, Wireshark</p>
+            </div>
+            <div class="card">
+                <h3><a href="reseaux.html">Réseaux et Protocoles</a></h3>
+                <p>DNS, RIP, DHCP, NAT, ACL, OSPF, SYSLOG</p>
+            </div>
+            <div class="card">
+                <h3><a href="virtualisation.html">Virtualisation</a></h3>
+                <p>VirtualBox, VMware</p>
+            </div>
+        </div>
+    </section>
+<!----------------------------------COMPETENCES  ------------------------------->
+
+<!----------------------------------Expériences  ------------------------------->
+
+<section id="experiences" class="experiences-section">
+    <h2>Expériences Professionnelles</h2>
+    <div class="experiences-container">
+
+        <div class="experience-card">
+            <h3>Avril-Mai 2024: Stagiaire chez SecureTech Solutions</h3> 
+            <p class="company-name">SecureTech Solutions</p>
+            <ul>
+                <li> Analyse des  vulnérabilités sur les systèmes d’information</li>
+                <li> Déploiement et configuration de pare-feu  Fortigate pour sécuriser le
+                    réseau</li>
+                <li> Mise en place de règles pour filtrer et gérer les accès.</li>
+                <li> Participation à des tests d’intrusion pour identifier les failles de
+                    sécurité.</li>
+            </ul>
+        </div>
+        <div class="experience-card">
+            <h3>Juin-Juillet 2024: Assistant Technicien Stagiaire</h3>
+            <p class="company-name">WILL-LABS</p>
+            <ul>
+                <li>Configuration des équipements réseaux (routeurs, switchs, etc.).</li>
+                <li>Assistance aux équipes pour le dépannage technique.</li>
+            </ul>
+        </div>
+        <div class="experience-card">
+            <h3>Août 2024: Assistant Technicien Stagiaire</h3>
+            <p class="company-name">AFRITEC SARL</p>
+            <ul>
+                <li>Maintenance du réseau et câblage des automates.</li>
+                <li>Intervention sur le réseau pour l’entreprise Brasserie BB au Togo.</li>
+            </ul>
+        </div>
+    </div>
+
+    <style>
+        .experiences-section {
+            background-color: #f9fafb;
+            padding: 40px 15px;
+            text-align: center;
+        }
+
+        .experiences-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .experience-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 45%;
+            max-width: 400px;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        .experience-card h3 {
+            color: #1d3557;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .company-name {
+            color: #457b9d;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .experience-card ul {
+            color: #333;
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .experience-card ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</section>
+
+<!-------------------------------------EXPERIENCES  --------------------------->
+
+<!-----------------------------------Skill & LANGUES  -------------------------->
+
+<section id="qualites-langues" class="qualites-langues-section">
+    <h2>Qualités & Langues</h2>
+    <div class="qualites-container">
+        <div class="qualite-card">
+            <h3>Qualités</h3>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Rigueur</li>
+                <li><i class="fas fa-users"></i> Travail en équipe</li>
+                <li><i class="fas fa-bolt"></i> Dynamique</li>
+            </ul>
+        </div>
+        <div class="qualite-card">
+            <h3>Langues</h3>
+            <ul>
+                <li><i class="fas fa-language"></i> Anglais technique: <strong>Intermédiaire (B1)</strong></li>
+                <li><i class="fas fa-language"></i> Français: <strong>Bonne compréhension et expression</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <style>
+        .qualites-langues-section {
+            background-color: #f9f9f9;
+            padding: 40px 15px;
+            text-align: center;
+        }
+
+        .qualites-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .qualite-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 45%;
+            max-width: 400px;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .qualite-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        .qualite-card h3 {
+            color: #1d3557;
+            margin-bottom: 15px;
+        }
+
+        .qualite-card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .qualite-card li {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .qualite-card li i {
+            color: #457b9d;
+            margin-right: 10px;
+        }
+
+        .qualite-card li strong {
+            color: #e63946;
+        }
+    </style>
+</section>
+<!------------------------------------Skill & LANGUES  -------------------------->
+
+<!----------------------------------- CENTRE INTERETS  --------------------------------->
+<section id="centres-interets" class="centres-interets-section">
+    <h2>Centres d'Intérêts</h2>
+    <div class="interets-container">
+        <div class="interet-card">
+            <i class="fas fa-futbol"></i>
+            <h3>Pratique du Football</h3>
+            <p>Passionné par le football, j'aime pratiquer ce sport régulièrement, que ce soit en équipe ou pour le plaisir personnel.</p>
+        </div>
+        <div class="interet-card">
+            <i class="fas fa-music"></i>
+            <h3>Musique</h3>
+            <p>Amateur de Gospel, Slow, Rap et musique d'Action. La musique est une grande source d'inspiration dans ma vie.</p>
+        </div>
+    </div>
+
+    <style>
+        .centres-interets-section {
+            background-color: #f4f4f4;
+            padding: 40px 15px;
+            text-align: center;
+        }
+
+        .interets-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .interet-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 45%;
+            max-width: 400px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .interet-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        .interet-card i {
+            font-size: 3rem;
+            color: #457b9d;
+            margin-bottom: 15px;
+        }
+
+        .interet-card h3 {
+            color: #1d3557;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .interet-card p {
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    </style>
+</section>
+
+<!------------------------------------CENTRE D'INTERETS  -->
+
+<!------------------------------------CONTACT ------------->
+<section id="contact">
+    <h2>Me Contacter</h2>
+    <p>Envoyez-moi un message pour discuter d'opportunités.</p>
+    <form>
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Message :</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+<!------------------------------------CONTACT ------------------->
+
+    <footer>
+        <p>© 2025 Semh ANANI - Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function downloadCV() {
+            const link = document.createElement('a');
+            link.href = './MON_Cv_semh/Curriculum_Vitae_ANANI.pdf';
+            link.download = 'Semh_ANANI_CV.pdf';
+            link.click();
+        }
+    </script>
+</body>
+</html>
